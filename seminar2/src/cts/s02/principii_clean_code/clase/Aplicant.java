@@ -5,10 +5,10 @@ public abstract class Aplicant{
 	protected String prenume;
 	protected int varsta;
 	protected int punctaj;
-	protected int nr_proiecte;
-	protected String[] denumireProiect;
+	protected int nrproiecte;
+	protected String[] denumiriProiecte;
 	
-	
+
 	public String getNume() {
 		return nume;
 	}
@@ -53,14 +53,14 @@ public abstract class Aplicant{
 		this.prenume = prenume;
 		this.varsta = varsta;
 		this.punctaj = punctaj;
-		this.nr_proiecte = nr_proiecte;
-		this.denumireProiect = denumireProiect;
+		this.nrproiecte = nr_proiecte;
+		this.denumiriProiecte = denumireProiect;
 	}
-	public int getNr_proiecte() {
-		return nr_proiecte;
+	public int getNrproiecte() {
+		return nrproiecte;
 	}
-	public void setNr_proiecte(int nr_proiecte) {
-		this.nr_proiecte = nr_proiecte;
+	public void setNrproiecte(int nrproiecte) {
+		this.nrproiecte = nrproiecte;
 	}
 
 }
