@@ -10,8 +10,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ReaderAngajat extends ReaderAplicant{
-    public ReaderAngajat(String fileName)
-    {
+    public ReaderAngajat(String fileName) {
         super(fileName);
     }
     @Override
@@ -21,18 +20,11 @@ public class ReaderAngajat extends ReaderAplicant{
         List<Aplicant> angajati = new ArrayList<Aplicant>();
 
         while (input2.hasNext()) {
-            String nume = input2.next();
-            String prenume = input2.next();
-            int varsta = input2.nextInt();
-            int punctaj = input2.nextInt();
-            int nr = input2.nextInt();
-            String[] vect = new String[5];
-            for (int i = 0; i < nr; i++)
-                vect[i] = input2.next();
-            int salariu = input2.nextInt();
-            String ocupatie = input2.next();
-            Angajat a = new Angajat(nume, prenume, varsta, punctaj, nr, vect, salariu, ocupatie);
-            angajati.add(a);
+            Angajat angajat = new Angajat();
+            super.citesteAplicant(input2,angajat);
+            angajat.setSalariu(input2.nextInt());
+            angajat.setOcupatie(input2.next());
+            angajati.add(angajat);
         }
         input2.close();
         return angajati;
