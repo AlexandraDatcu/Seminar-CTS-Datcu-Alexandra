@@ -19,6 +19,7 @@ public class Program {
 				System.out.println(angajat.toString());
 				angajat.afisareFinantare();
 				angajat.afisareStatut();
+
 			}
 
 
