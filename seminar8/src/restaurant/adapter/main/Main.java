@@ -25,6 +25,7 @@ public class Main {
         Main.imprimare(adapter,450);
 
         AdapterObiecteRestaurant adapterObiecteRestaurant = new AdapterObiecteRestaurant(bar);
+
         Main.imprimare(adapterObiecteRestaurant,340);
     }
 }
