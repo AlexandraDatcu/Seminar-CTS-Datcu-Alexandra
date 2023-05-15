@@ -18,14 +18,12 @@ public class Bancomat {
     }
     public void introduceCard(){
         StareAreCard stareAreCard = new StareAreCard();
-        this.stare = stareAreCard;
-        stare.modificaStareBancomat(this);
+        stareAreCard.modificaStareBancomat(this);
     }
     public void introducePin()
     {
         StareArePinIntrodus stareArePinIntrodus = new StareArePinIntrodus();
-        this.stare = stareArePinIntrodus;
-        stare.modificaStareBancomat(this);
+        stareArePinIntrodus.modificaStareBancomat(this);
     }
     public void retrageBani(Integer sumaRetrasa){
         if(this.stare instanceof StareArePinIntrodus){
@@ -38,6 +36,9 @@ public class Bancomat {
                     IStare stareNuAreBani = new StareNuAreBani();
                     stareNuAreBani.modificaStareBancomat(this);
                 }
+                else {
+                    System.out.println("Nu sunt suficienti bani in cont.");
+                }
             }
         }
     }
@@ -45,7 +46,6 @@ public class Bancomat {
     public void retrageCard()
     {
         IStare stareNuAreCard = new StareNuAreCard();
-        this.stare = stareNuAreCard;
-        this.stare.modificaStareBancomat(this);
+        stareNuAreCard.modificaStareBancomat(this);
     }
 }

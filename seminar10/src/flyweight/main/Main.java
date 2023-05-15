@@ -11,7 +11,7 @@ public class Main {
         PozitieDesenare pozitieDesenare3 = new PozitieDesenare(24,12,"Mov");
         fabricaSpectatori.getSpectator(1,20,10).deseneazaSpectator(pozitieDesenare1);
         fabricaSpectatori.getSpectator(2, 13.5F,12).deseneazaSpectator(pozitieDesenare2);
-        fabricaSpectatori.getSpectator(1,20,10).deseneazaSpectator(pozitieDesenare3);
+        fabricaSpectatori.getSpectator(1,20,23).deseneazaSpectator(pozitieDesenare3);
 
     }
 }

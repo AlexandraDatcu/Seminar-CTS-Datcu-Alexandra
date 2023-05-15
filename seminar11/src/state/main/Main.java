@@ -10,6 +10,7 @@ public class Main {
         bancomat1.introducePin();
         bancomat1.retrageBani(200);
         bancomat1.introduceCard();
+        bancomat1.introducePin();
         bancomat1.retrageBani(500);
         bancomat1.introducePin();
         bancomat1.retrageBani(1000);
