@@ -1,4 +1,6 @@
-package test;
+package clase;
+
+import test.ExceptieVarsta;
 
 public interface IPersoana {
     public String getSex();

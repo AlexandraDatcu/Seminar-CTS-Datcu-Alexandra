@@ -1,5 +1,8 @@
-package test;
+package clase;
 
+
+import test.ExceptieVarsta;
+import test.ExceptionCnpInexistent;
 
 import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
